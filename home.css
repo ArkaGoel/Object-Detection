@@ -1,0 +1,13 @@
+body{
+    background-image: url("https://images.pexels.com/photos/1242348/pexels-photo-1242348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+}
+button{
+    width: 30%;
+}
+#head{
+    font-family: 'Roboto Condensed';
+}
+#head2{
+    font-family: 'Cormorant SC';
+}

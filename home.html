@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Object Detection Web App</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+    <script src="https://cdn.jesdeliver.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <center>
+        <h1 id="head">Object Detection Web App</h1>
+        <h3 id="head2">REALTIME</h3>
+        <label class="note">NOTE: Click on any of these buttons for object detection of these objects/rooms</label>
+        <br><br>
+        <button class="btn btn-info" onclick="bedroom()">Bed Room</button>
+        <br><br>
+        <button class="btn btn-danger" onclick="tvac()">TV and AC</button>
+        <br><br>
+        <button class="btn btn-warning" onclick="desk()">Desk</button>
+        <br><br>
+        <button class="btn btn-success" onclick="bottles()">Bottles</button>
+        <br><br>
+        <button class="btn btn-primary" onclick="fruitbasket()">Fruit Basket</button>
+    </center>
+</body>
+
+</html>
