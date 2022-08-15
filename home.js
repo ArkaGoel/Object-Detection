@@ -2,8 +2,8 @@ function bedroom() {
     window.location = "bedroom.html";
 }
 
-function tvac() {
-    window.location = "tvac.html";
+function living() {
+    window.location = "living.html";
 }
 
 function desk() {

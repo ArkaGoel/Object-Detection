@@ -1,10 +1,10 @@
 let state = "";
 objects = [];
 function preload(){
-    img = loadImage('https://images.pexels.com/photos/251225/pexels-photo-251225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    img = loadImage('https://images.pexels.com/photos/7534273/pexels-photo-7534273.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
 function setup(){
-    canvas = createCanvas(900, 750);
+    canvas = createCanvas(800, 550);
     canvas.center();
     objectDetector = ml5.objectDetector('cocossd', modelLoaded);
     document.getElementById("status").innerHTML ="Status - Detecting Objects...";
@@ -23,7 +23,7 @@ function gotResults(error, results){
     }
 }
 function draw(){
-    image(img, 0, 0, 900, 750);
+    image(img, 0, 0, 800, 550);
     if(state != ""){
         for(i = 0; i < objects.length; i++){
          document.getElementById("status").innerHTML ="Objects Detected.";
@@ -33,7 +33,7 @@ function draw(){
           noFill();
           stroke('#fc030b');
           rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
-          document.getElementById("check").innerHTML = "There are 8 objects but the model detected 4 objects";
-         }
+          document.getElementById("check").innerHTML = "There are 17 objects but the model detected only 2 objects.";
+        }
      }
 }
